@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/
+archive/
+*.zip
+*.log
+worker.log

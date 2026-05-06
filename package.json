@@ -1,0 +1,21 @@
+{
+  "name": "tweetdelete",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "auth": "node auth.js",
+    "import": "node parse-archive.js",
+    "delete": "node delete-worker.js",
+    "status": "node status.js",
+    "seed": "node seed.js",
+    "start": "node seed.js && node delete-worker.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
